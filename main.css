@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.page-content {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.squiggle {
+  --mask:
+    radial-gradient(54.4px at calc(100% + 40.5px) 50%, #0000 calc(99% - 8px), #000 calc(101% - 8px) 99%, #0000 101%) calc(50% - 19px + .5px) calc(50% - 60px)/ 38px 120px repeat-y,
+    radial-gradient(54.4px at -40.5px 50%, #0000 calc(99% - 8px), #000 calc(101% - 8px) 99%, #0000 101%) calc(50% + 19px) 50%/38px 120px repeat-y;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  position: absolute;
+  top: 0;
+  background-color: #C1E4E1;
+  width: 50px;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.header-links {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 100px;
+}
+
+.header-links a {
+  padding: 0 25px;
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #F38367;
+}
+
+.main-content {
+  padding: 0 15%;
+  text-align: center;
+}
+
+.our-names {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #F38367;
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.and {
+  font-size: 40px;
+}
+
+.date {
+  display: block;
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #F38367;
+  font-size: 30px;
+}
+
+.location {
+  display: block;
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #F38367;
+  font-size: 15px;
+}

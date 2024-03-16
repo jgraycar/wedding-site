@@ -21,10 +21,10 @@ body {
 .page-content {
   position: relative;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 60px;
 }
 
 .squiggle {
@@ -54,29 +54,24 @@ body {
 .main-content {
   width: 100%;
   box-sizing: border-box;
-  padding: 0 15%;
+  padding: 0 15% 60px;
   text-align: center;
+}
+
+.attr {
+  position: absolute;
+  bottom: 8px;
+  width: 100vw;
+  text-align: center;
+  font-size: 12px;
 }
 
 @media (max-width: 500px) {
   .squiggle {
-    width: 25px;
+    width: 15px;
   }
 
   .header-links {
     margin: 20px 0 40px;
-  }
-
-  #cover-photo {
-    width: 250px;
-    height: 200px;
-  }
-
-  .our-names {
-    font-size: 60px;
-  }
-
-  #countdown {
-    font-size: 30px;
   }
 }

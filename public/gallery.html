@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joel & Cheryl's Wedding!</title>
+  <link href="shared.css" rel="stylesheet" />
+  <link href="gallery.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sue+Ellen+Francisco&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="photoswipe/photoswipe.css">
+
+</head>
+
+<body>
+  <div class="page-content">
+    <div class="header-links">
+      <a href="./index.html" class="sf-font">HOME</a>
+      <a href="./travel.html" class="sf-font">TRAVEL</a>
+      <a href="./gallery.html" class="sf-font">GALLERY</a>
+    </div>
+
+    <div class="main-content">
+      <span class="title cursive-font">Gallery</span>
+
+      <div id="gallery">
+        <a class="xmas vertical" href="./img/Christmas-tree-lane.jpg" data-pswp-width="904" data-pswp-height="1200">
+          <img src="./img/Christmas-tree-lane.jpg" alt="" />
+        </a>
+        <a class="proposal" href="./img/proposal.jpg" data-pswp-width="1200" data-pswp-height="800">
+          <img src="./img/proposal.jpg" alt="" />
+        </a>
+        <a class="monterey" href="./img/monterey.jpg" data-pswp-width="1200" data-pswp-height="900">
+          <img src="./img/monterey.jpg" alt="" />
+        </a>
+        <a class="wallaby" href="./img/wallaby.jpg" data-pswp-width="1200" data-pswp-height="900">
+          <img src="./img/wallaby.jpg" alt="" />
+        </a>
+        <a class="piggyback" href="./img/engagement_piggyback.jpg" data-pswp-width="1200" data-pswp-height="800">
+          <img src="./img/engagement_piggyback.jpg" alt="" />
+        </a>
+        <a class="banff vertical" href="./img/banff_mtn.jpg" data-pswp-width="904" data-pswp-height="1200">
+          <img src="./img/banff_mtn.jpg" alt="" />
+        </a>
+        <a class="ich vertical" href="./img/ich.jpg" data-pswp-width="900" data-pswp-height="1200">
+          <img src="./img/ich.jpg" alt="" />
+        </a>
+        <a class="austria" href="./img/austria.jpg" data-pswp-width="1200" data-pswp-height="900">
+          <img src="./img/austria.jpg" alt="" />
+        </a>
+        <a class="dana vertical" href="./img/dana.jpg" data-pswp-width="904" data-pswp-height="1200">
+          <img src="./img/dana.jpg" alt="" />
+        </a>
+        <a class="driving vertical" href="./img/driving.jpg" data-pswp-width="800" data-pswp-height="1200">
+          <img src="./img/driving.jpg" alt="" />
+        </a>
+        <a class="grand-canyon" href="./img/grand-canyon.jpg" data-pswp-width="1200" data-pswp-height="900">
+          <img src="./img/grand-canyon.jpg" alt="" />
+        </a>
+        <a class="half-dome" href="./img/half-dome.jpg" data-pswp-width="1200" data-pswp-height="904">
+          <img src="./img/half-dome.jpg" alt="" />
+        </a>
+        <a class="jumping" href="./img/jumping.jpg" data-pswp-width="1200" data-pswp-height="800">
+          <img src="./img/jumping.jpg" alt="" />
+        </a>
+        <a class="pickleball" href="./img/pickleball.jpg" data-pswp-width="1200" data-pswp-height="900">
+          <img src="./img/pickleball.jpg" alt="" />
+        </a>
+        <a class="canoe" href="./img/canoe.jpg" data-pswp-width="1200" data-pswp-height="675">
+          <img src="./img/canoe.jpg" alt="" />
+        </a>
+        <a class="swimming" href="./img/swimming.jpg" data-pswp-width="1200" data-pswp-height="800">
+          <img src="./img/swimming.jpg" alt="" />
+        </a>
+        <a class="toronto" href="./img/toronto.jpg" data-pswp-width="1200" data-pswp-height="900">
+          <img src="./img/toronto.jpg" alt="" />
+        </a>
+      </div>
+
+      <script type="module">
+        import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.min.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallerySelector: '#gallery',
+          children: 'a',
+          pswpModule: () => import('./photoswipe/photoswipe.esm.min.js')
+        });
+        lightbox.init();
+      </script>
+    </div>
+  </div>
+
+  <div class="squiggle"></div>
+  <div class="squiggle" style="right: 0;"></div>
+</body>
+
+</html>

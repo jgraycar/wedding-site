@@ -1,0 +1,53 @@
+.our-names {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #F38367;
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 40px;
+}
+
+.and {
+  font-size: 40px;
+}
+
+.date {
+  display: block;
+  font-size: 30px;
+}
+
+.location {
+  display: block;
+  font-size: 15px;
+}
+
+#countdown {
+  display: block;
+  font-size: 35px;
+  margin-top: 60px;
+}
+
+#cover-photo {
+  object-fit: cover;
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+  #cover-photo {
+    width: 250px;
+    height: 200px;
+  }
+
+  .our-names {
+    font-size: 60px;
+  }
+
+  #countdown {
+    font-size: 30px;
+  }
+}

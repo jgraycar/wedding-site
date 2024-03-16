@@ -1,0 +1,76 @@
+.title {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 200px);
+  gap: 20px 20px;
+}
+
+#gallery a {
+  display: flex;
+  overflow: hidden;
+  border-radius: 6%;
+}
+
+#gallery img {
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.xmas {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.banff {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.piggyback {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.canoe {
+  grid-column: 2 / span 2;
+  grid-row: 5 / span 2;
+}
+
+.dana {
+  grid-column: 1 / span 1;
+  grid-row: 7 / span 2;
+}
+
+.ich {
+  grid-column: 3 / span 1;
+  grid-row: 8 / span 2;
+}
+
+@media (max-width: 500px) {
+  #gallery {
+    grid-template-columns: 100%;
+    gap: 20px 0;
+  }
+
+  #gallery a {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  #gallery a.vertical {
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1500px) {
+  #gallery {
+    grid-template-rows: repeat(9, 300px);
+  }
+}

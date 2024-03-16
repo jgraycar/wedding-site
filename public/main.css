@@ -27,7 +27,7 @@ body {
 .header-links {
   display: flex;
   justify-content: center;
-  margin: 50px 0 100px;
+  margin: 50px 0 60px;
 }
 
 .header-links a {
@@ -52,10 +52,10 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #F38367;
-  font-size: 80px;
+  font-size: 100px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin: 30px 0 40px;
 }
 
 .and {
@@ -76,4 +76,11 @@ body {
   display: block;
   font-size: 35px;
   margin-top: 60px;
+}
+
+#cover-photo {
+  object-fit: cover;
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
 }

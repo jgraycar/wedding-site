@@ -32,6 +32,9 @@ body {
 
 .header-links a {
   padding: 0 25px;
+}
+
+.sf-font {
   font-family: "Sue Ellen Francisco", cursive;
   font-weight: 400;
   font-style: normal;
@@ -61,18 +64,16 @@ body {
 
 .date {
   display: block;
-  font-family: "Sue Ellen Francisco", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: #F38367;
   font-size: 30px;
 }
 
 .location {
   display: block;
-  font-family: "Sue Ellen Francisco", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: #F38367;
   font-size: 15px;
+}
+
+#countdown {
+  display: block;
+  font-size: 35px;
+  margin-top: 60px;
 }

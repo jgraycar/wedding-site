@@ -1,9 +1,10 @@
 body {
   margin: 0;
+  position: relative;
 }
 
 .page-content {
-  position: absolute;
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -85,4 +86,27 @@ body {
   width: 400px;
   height: 350px;
   border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+  .squiggle {
+    width: 25px;
+  }
+
+  .header-links {
+    margin: 20px 0 40px;
+  }
+
+  #cover-photo {
+    width: 250px;
+    height: 200px;
+  }
+
+  .our-names {
+    font-size: 60px;
+  }
+
+  #countdown {
+    font-size: 30px;
+  }
 }

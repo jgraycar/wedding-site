@@ -9,7 +9,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sue+Ellen+Francisco&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="photoswipe/photoswipe-dynamic-caption-plugin.css">
+  <script src="./gallery.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -34,67 +38,96 @@
 
       <div id="gallery">
         <a class="xmas vertical" href="./img/Christmas-tree-lane.jpg" data-pswp-width="904" data-pswp-height="1200">
-          <img src="./img/Christmas-tree-lane.jpg" alt="" />
+          <img src="./img/Christmas-tree-lane.jpg" alt="Christmas Tree Lane in Altadena" />
+          <span class="img-caption">test test test</span>
         </a>
         <a class="proposal" href="./img/proposal.jpg" data-pswp-width="1200" data-pswp-height="800">
-          <img src="./img/proposal.jpg" alt="" />
+          <img src="./img/proposal.jpg" alt="Moments after Joel proposed to Cheryl :)" />
+          <span class="img-caption"></span>
         </a>
         <a class="monterey" href="./img/monterey.jpg" data-pswp-width="1200" data-pswp-height="900">
-          <img src="./img/monterey.jpg" alt="" />
+          <img src="./img/monterey.jpg" alt="A fun day exploring Monterey, CA" />
+          <span class="img-caption"></span>
         </a>
         <a class="wallaby" href="./img/wallaby.jpg" data-pswp-width="1200" data-pswp-height="900">
-          <img src="./img/wallaby.jpg" alt="" />
+          <img src="./img/wallaby.jpg" alt="Feeding a wallaby in an Australian nature preserve" />
+          <span class="img-caption"></span>
         </a>
         <a class="piggyback" href="./img/engagement_piggyback.jpg" data-pswp-width="1200" data-pswp-height="800">
-          <img src="./img/engagement_piggyback.jpg" alt="" />
+          <img src="./img/engagement_piggyback.jpg" alt="Our engagement photoshoot on the beaches of Santa Barbara" />
+          <span class="img-caption"></span>
         </a>
         <a class="banff vertical" href="./img/banff_mtn.jpg" data-pswp-width="904" data-pswp-height="1200">
-          <img src="./img/banff_mtn.jpg" alt="" />
+          <img src="./img/banff_mtn.jpg"
+            alt="Via ferrata in Banff National Park with a beautiful view of Mount Rundle" />
+          <span class="img-caption"></span>
         </a>
         <a class="ich vertical" href="./img/ich.jpg" data-pswp-width="900" data-pswp-height="1200">
-          <img src="./img/ich.jpg" alt="" />
+          <img src="./img/ich.jpg" alt="Ich Liebe Dich <3" />
+          <span class="img-caption"></span>
         </a>
         <a class="austria" href="./img/austria.jpg" data-pswp-width="1200" data-pswp-height="900">
-          <img src="./img/austria.jpg" alt="" />
+          <img src="./img/austria.jpg" alt="Our first international trip together to Austria in Winter 2019" />
+          <span class="img-caption"></span>
         </a>
         <a class="dana vertical" href="./img/dana.jpg" data-pswp-width="904" data-pswp-height="1200">
-          <img src="./img/dana.jpg" alt="" />
+          <img src="./img/dana.jpg" alt="Meeting our niece Dana for the first time" />
+          <span class="img-caption"></span>
         </a>
         <a class="driving vertical" href="./img/driving.jpg" data-pswp-width="800" data-pswp-height="1200">
-          <img src="./img/driving.jpg" alt="" />
+          <img src="./img/driving.jpg" alt="Driving an amphibious ATV in Cancun, Mexico" />
+          <span class="img-caption"></span>
         </a>
         <a class="grand-canyon" href="./img/grand-canyon.jpg" data-pswp-width="1200" data-pswp-height="900">
-          <img src="./img/grand-canyon.jpg" alt="" />
+          <img src="./img/grand-canyon.jpg" alt="Hiking the Grand Canyon in 2020" />
+          <span class="img-caption"></span>
         </a>
         <a class="half-dome" href="./img/half-dome.jpg" data-pswp-width="1200" data-pswp-height="904">
-          <img src="./img/half-dome.jpg" alt="" />
+          <img src="./img/half-dome.jpg"
+            alt="At the top of Half Dome in Yosemite National Park, with friends Kristy & Richard" />
+          <span class="img-caption"></span>
         </a>
         <a class="jumping" href="./img/jumping.jpg" data-pswp-width="1200" data-pswp-height="800">
-          <img src="./img/jumping.jpg" alt="" />
+          <img src="./img/jumping.jpg" alt="Jumping together into a cenote near Cancun, Mexico" />
+          <span class="img-caption"></span>
         </a>
         <a class="pickleball" href="./img/pickleball.jpg" data-pswp-width="1200" data-pswp-height="900">
-          <img src="./img/pickleball.jpg" alt="" />
+          <img src="./img/pickleball.jpg" alt="3rd place (out of four...) in our first pickleball tournament" />
+          <span class="img-caption"></span>
         </a>
         <a class="canoe" href="./img/canoe.jpg" data-pswp-width="1200" data-pswp-height="675">
-          <img src="./img/canoe.jpg" alt="" />
+          <img src="./img/canoe.jpg" alt="Canoeing on Lake Louise in Canada's Banff National Park" />
+          <span class="img-caption"></span>
         </a>
         <a class="swimming" href="./img/swimming.jpg" data-pswp-width="1200" data-pswp-height="800">
-          <img src="./img/swimming.jpg" alt="" />
+          <img src="./img/swimming.jpg" alt="Swimming in the caves of Cancun, Mexico" />
+          <span class="img-caption"></span>
         </a>
         <a class="toronto" href="./img/toronto.jpg" data-pswp-width="1200" data-pswp-height="900">
-          <img src="./img/toronto.jpg" alt="" />
+          <img src="./img/toronto.jpg" alt="Leaning off the top of CN Tower in Toronto" />
+          <span class="img-caption"></span>
         </a>
       </div>
 
       <script type="module">
         import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.min.js';
+        import PhotoSwipeDynamicCaption from './photoswipe/photoswipe-dynamic-caption-plugin.esm.min.js'
         const lightbox = new PhotoSwipeLightbox({
           gallerySelector: '#gallery',
           children: 'a',
-          pswpModule: () => import('./photoswipe/photoswipe.esm.min.js')
+          pswpModule: () => import('./photoswipe/photoswipe.esm.min.js'),
+          paddingFn: (viewportSize) => {
+            return {
+              top: 30, bottom: 30, left: 0, right: 0
+            }
+          },
+        });
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+          type: 'below',
         });
         lightbox.init();
       </script>
+      <script>initializeCaptions();</script>
     </div>
 
     <span class="attr sf-font">Built by Joel 😀</span>

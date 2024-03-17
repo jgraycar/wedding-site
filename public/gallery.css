@@ -17,6 +17,7 @@
   display: flex;
   overflow: hidden;
   border-radius: 6%;
+  position: relative;
 }
 
 #gallery img {
@@ -53,6 +54,39 @@
 .ich {
   grid-column: 3 / span 1;
   grid-row: 8 / span 2;
+}
+
+.pswp__dynamic-caption {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.img-caption {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: visibility 0s, opacity 0.25s linear;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+#gallery a:hover .img-caption {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 500px) {

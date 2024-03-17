@@ -9,6 +9,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, 200px);
   gap: 20px 20px;
+  margin: auto;
+  max-width: 1400px;
 }
 
 #gallery a {

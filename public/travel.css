@@ -1,5 +1,112 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .title {
   display: block;
   margin-bottom: 30px;
   font-size: 60px;
+}
+
+.description {
+  display: block;
+  font-size: 25px;
+  width: 75%;
+}
+
+.description:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+.divider {
+  width: 20%;
+  height: 3px;
+  background: #C1E4E1;
+  border-radius: 5px;
+  margin: 50px 0;
+}
+
+.points-of-interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.label {
+  margin: 10px 0 15px;
+  font-size: 20px;
+}
+
+.hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.address {
+  font-size: 24px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #F38367;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 200px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .address {
+    font-size: 18px;
+  }
+
+  .button {
+    width: 150px;
+    padding: 5px 0;
+    font-size: 18px;
+    border-radius: 6px;
+  }
 }

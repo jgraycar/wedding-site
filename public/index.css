@@ -14,6 +14,10 @@
   font-size: 40px;
 }
 
+.bottom-row-names .and {
+  display: none;
+}
+
 .date {
   display: block;
   font-size: 30px;
@@ -66,5 +70,61 @@
 @media (min-width: 651px) and (max-width: 850px) {
   .our-names {
     font-size: 100px;
+  }
+}
+
+@media (min-width: 851px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .our-names {
+    align-items: flex-start;
+  }
+
+  .text-content {
+    padding: 0 0 0 60px;
+  }
+
+  .main-content {
+    align-items: center;
+    text-align: start;
+  }
+
+  .our-names {
+    font-size: 65px;
+    margin: 0 0 70px;
+  }
+
+  .bottom-row-names .and {
+    display: inline;
+  }
+
+  .and {
+    position: relative;
+    top: -5px;
+  }
+
+  .vert-and {
+    display: none;
+  }
+
+  #cover-photo {
+    height: 600px;
+    object-position: -260px;
+  }
+
+  #countdown {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .date {
+    font-size: 25px;
+  }
+
+  .location {
+    font-size: 15px;
   }
 }

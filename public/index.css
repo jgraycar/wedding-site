@@ -4,7 +4,7 @@
   font-weight: 400;
   font-style: normal;
   color: #F38367;
-  font-size: 100px;
+  font-size: 130px;
   display: flex;
   flex-direction: column;
   margin: 30px 0 40px;
@@ -49,5 +49,22 @@
 
   #countdown {
     font-size: 30px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 650px) {
+  .our-names {
+    font-size: 80px;
+  }
+
+  #cover-photo {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 850px) {
+  .our-names {
+    font-size: 100px;
   }
 }

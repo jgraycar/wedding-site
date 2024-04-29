@@ -52,6 +52,10 @@
   align-items: center;
 }
 
+.hotel .description:last-of-type {
+  margin-bottom: 30px;
+}
+
 .name {
   font-size: 40px;
   line-height: 1.2;
@@ -74,6 +78,41 @@
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+#cc-discount {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: #F38367;
+}
+
+#cc-discount:hover {
+  color: #497E91;
+}
+
+#cc-discount-dialog {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  border: 2px solid #C1E4E1;
+}
+
+::backdrop {
+  opacity: .5;
+  background: #000;
+}
+
+.dialog-text {
+  display: block;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+  text-align: start;
+}
+
+dialog button {
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {

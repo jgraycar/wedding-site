@@ -3,7 +3,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #F38367;
+  color: var(--text-color);
   font-size: 130px;
   display: flex;
   flex-direction: column;

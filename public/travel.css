@@ -23,7 +23,7 @@
 .divider {
   width: 20%;
   height: 3px;
-  background: #C1E4E1;
+  background: var(--squiggle-color);
   border-radius: 5px;
   margin: 50px 0;
 }
@@ -69,7 +69,7 @@
 }
 
 .button {
-  background: #F38367;
+  background: var(--squiggle-color);
   color: white;
   border-radius: 8px;
   padding: 10px 0;
@@ -83,7 +83,7 @@
 #cc-discount {
   text-decoration: underline;
   text-decoration-style: dotted;
-  color: #F38367;
+  color: var(--text-color);
 }
 
 #cc-discount:hover {

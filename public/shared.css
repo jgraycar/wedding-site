@@ -1,13 +1,25 @@
+:root {
+  --text-color: #ADB78B;
+  --squiggle-color: #B9C1E6;
+}
+
 body {
   margin: 0;
   position: relative;
+  background-color: #fcedc86e;
+}
+
+#logo {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .sf-font {
   font-family: "Sue Ellen Francisco", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #F38367;
+  color: var(--text-color);
 }
 
 .cursive-font {
@@ -15,7 +27,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #F38367;
+  color: var(--text-color);
 }
 
 .page-content {
@@ -35,7 +47,7 @@ body {
   mask: var(--mask);
   position: absolute;
   top: 0;
-  background-color: #C1E4E1;
+  background-color: var(--squiggle-color);
   width: 50px;
   height: 100%;
   padding: 0 5%;
@@ -45,7 +57,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 50px 0 60px;
+  margin: 5px 0 60px;
 }
 
 .header-links a {
@@ -76,7 +88,7 @@ body {
   }
 
   .header-links {
-    margin: 20px 0 40px;
+    margin: 0 0 40px;
     max-width: calc(100% - 50px);
   }
 }

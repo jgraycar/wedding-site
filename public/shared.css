@@ -44,11 +44,15 @@ body {
 .header-links {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 50px 0 60px;
 }
 
 .header-links a {
   padding: 0 25px;
+  flex: 1 1 0;
+  min-width: 40px;
+  text-align: center;
 }
 
 .main-content {
@@ -73,5 +77,6 @@ body {
 
   .header-links {
     margin: 20px 0 40px;
+    max-width: calc(100% - 50px);
   }
 }

@@ -1,6 +1,7 @@
 :root {
   --text-color: #ADB78B;
   --squiggle-color: #B9C1E6;
+  --title-color: #EA9999;
 }
 
 body {
@@ -30,6 +31,12 @@ body {
   color: var(--text-color);
 }
 
+.lba-font {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .page-content {
   position: relative;
   width: 100%;
@@ -57,7 +64,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 5px 0 60px;
+  margin: 5px 0 35px;
 }
 
 .header-links a {

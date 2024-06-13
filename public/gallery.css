@@ -1,7 +1,9 @@
 .title {
   display: block;
-  margin-bottom: 30px;
   font-size: 60px;
+  color: var(--title-color);
+  transform: rotate(-3deg);
+  margin-bottom: 10px;
 }
 
 #gallery {

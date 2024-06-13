@@ -17,9 +17,11 @@ body {
 }
 
 .sf-font {
-  font-family: "Sue Ellen Francisco", cursive;
+  font-family: "Playpen Sans", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
   color: var(--text-color);
 }
 
@@ -72,6 +74,11 @@ body {
   flex: 1 1 0;
   min-width: 40px;
   text-align: center;
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+  text-transform: uppercase;
 }
 
 .main-content {
@@ -89,6 +96,52 @@ body {
   font-size: 12px;
 }
 
+#fixed-bg-assets svg {
+  position: fixed;
+  opacity: 0.5;
+  fill: var(--title-color);
+  color: var(--title-color);
+}
+
+#fixed-bg-assets #heart {
+  top: 20%;
+  left: 20%;
+  transform: rotate(-20deg);
+  width: 35px;
+}
+
+#fixed-bg-assets #heart2 {
+  top: 80%;
+  right: 30%;
+  width: 25px;
+  transform: scaleX(-1);
+}
+
+#fixed-bg-assets #star {
+  width: 30px;
+  top: 40%;
+  right: 20%;
+}
+
+#fixed-bg-assets #star2 {
+  width: 30px;
+  bottom: 15%;
+  left: 13%;
+}
+
+#fixed-bg-assets #star3 {
+  width: 30px;
+  top: 55%;
+  left: 30%;
+}
+
+#fixed-bg-assets #rings {
+  width: 40px;
+  top: 5%;
+  right: 30%;
+  transform: rotate(15deg);
+}
+
 @media (max-width: 500px) {
   .squiggle {
     width: 15px;
@@ -97,5 +150,13 @@ body {
   .header-links {
     margin: 0 0 40px;
     max-width: calc(100% - 50px);
+  }
+
+  #fixed-bg-assets #heart {
+    width: 25px;
+  }
+
+  #fixed-bg-assets #rings {
+    right: 15%;
   }
 }

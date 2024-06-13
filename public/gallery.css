@@ -18,8 +18,9 @@
 #gallery a {
   display: flex;
   overflow: hidden;
-  border-radius: 6%;
   position: relative;
+  border-radius: 6%;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.1));
 }
 
 #gallery img {
@@ -97,6 +98,10 @@
 }
 
 @media (max-width: 500px) {
+  .title {
+    font-size: 40px;
+  }
+
   #gallery {
     grid-template-columns: 100%;
     gap: 20px 0;

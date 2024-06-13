@@ -9,6 +9,8 @@
   font-size: 60px;
   color: var(--title-color);
   transform: rotate(-3deg);
+  line-height: 1;
+  margin-bottom: 20px;
 }
 
 .description {
@@ -117,11 +119,6 @@ dialog button {
 }
 
 @media (max-width: 500px) {
-  .title {
-    line-height: 1;
-    margin-bottom: 20px;
-  }
-
   .description {
     font-size: 20px;
     width: 100%;

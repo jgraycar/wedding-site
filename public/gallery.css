@@ -98,10 +98,6 @@
 }
 
 @media (max-width: 500px) {
-  .title {
-    font-size: 40px;
-  }
-
   #gallery {
     grid-template-columns: 100%;
     gap: 20px 0;

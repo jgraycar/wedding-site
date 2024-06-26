@@ -1,17 +1,9 @@
-.title {
-  display: block;
-  font-size: 60px;
-  color: var(--title-color);
-  transform: rotate(-3deg);
-  margin-bottom: 10px;
-}
-
 #gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(12, 200px);
   gap: 20px 20px;
-  margin: auto;
+  margin: 35px auto;
   max-width: 1400px;
 }
 

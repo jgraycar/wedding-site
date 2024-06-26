@@ -72,15 +72,16 @@ body {
 }
 
 .header-links {
+  /* Render above squiggles so always clickable at the edges. */
+  z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 5px 0 35px;
 }
 
 .header-links a {
   padding: 0 25px;
-  flex: 1 1 0;
   min-width: 40px;
   text-align: center;
   font-family: "Sue Ellen Francisco", cursive;
@@ -190,5 +191,11 @@ body {
 
   #fixed-bg-assets #rings {
     right: 15%;
+  }
+}
+
+@media (max-width: 701px) {
+  .header-links {
+    max-width: calc(100% - 100px);
   }
 }

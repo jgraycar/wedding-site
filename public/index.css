@@ -38,6 +38,10 @@
   margin-bottom: 20px;
 }
 
+.button {
+  margin-top: 20px;
+}
+
 #countdown {
   display: block;
   font-size: 20px;

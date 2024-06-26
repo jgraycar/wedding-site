@@ -121,6 +121,18 @@ body {
   margin-bottom: 50px;
 }
 
+.button {
+  background: var(--squiggle-color);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 200px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .attr {
   position: absolute;
   bottom: 8px;

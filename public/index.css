@@ -38,11 +38,6 @@
   margin-bottom: 20px;
 }
 
-.info a {
-  color: var(--text-color);
-  text-decoration-style: dotted;
-}
-
 #countdown {
   display: block;
   font-size: 20px;
@@ -88,15 +83,27 @@
   }
 }
 
-@media (min-width: 851px) {
-  .main-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+@media (min-width: 851px) and (max-width: 1150px) {
+  .our-names {
+    font-size: 115px;
+    margin-bottom: 30px;
   }
 
+  .and {
+    font-size: 50px;
+    top: -20px;
+  }
+}
+
+@media (min-width: 1151px) {
   .our-names {
+    font-size: 140px;
+    margin-bottom: 40px;
+  }
+
+  .and {
     font-size: 75px;
+    top: -25px;
   }
 }

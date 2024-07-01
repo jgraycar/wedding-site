@@ -123,6 +123,7 @@ body {
 }
 
 .button {
+  position: relative;
   background: var(--squiggle-color);
   color: white;
   border-radius: 8px;
@@ -132,6 +133,44 @@ body {
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.highlighted:hover {
+  transform: scale(1.2);
+}
+
+.highlighted:before,
+.highlighted:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #EA9999 15%, #9999EA 35%, #99EA99 65%, #EA99C2 80%, #EA9999 95%);
+  background-size: 150%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.highlighted:after {
+  filter: blur(40px);
 }
 
 .attr {

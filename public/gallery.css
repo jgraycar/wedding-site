@@ -1,7 +1,7 @@
 #gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, 200px);
+  grid-template-rows: repeat(13, 200px);
   gap: 20px 20px;
   margin: 35px auto;
   max-width: 1400px;
@@ -51,9 +51,32 @@
   grid-row: 8 / span 2;
 }
 
+.taiwan {
+  grid-column: 1 / span 1;
+  grid-row: 10 / span 2;
+}
+
 .death-valley {
   grid-column: 2 / span 2;
-  grid-row: 10 / span 3;
+  grid-row: 11 / span 3;
+}
+
+.oliver {
+  grid-column: 3 / span 1;
+  grid-row: 7 / span 1;
+}
+
+.oliver img {
+  object-position: 50% 37%;
+}
+
+.ivy {
+  grid-column: 2 / span 1;
+  grid-row: 8 / span 1;
+}
+
+.ivy img {
+  object-position: 50% 25%;
 }
 
 .pswp__dynamic-caption {
@@ -109,6 +132,7 @@
 @media (min-width: 501px) and (max-width: 900px) {
   #gallery {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(17, 200px);
   }
 
   #gallery a {
@@ -124,10 +148,15 @@
     grid-row: span 2;
     grid-column: span 2;
   }
+
+  #gallery .taiwan {
+    grid-column: 2 / span 1;
+    grid-row: 13 / span 2;
+  }
 }
 
 @media (min-width: 1500px) {
   #gallery {
-    grid-template-rows: repeat(12, 300px);
+    grid-template-rows: repeat(13, 300px);
   }
 }

@@ -1,0 +1,96 @@
+#schedule {
+  list-style: none;
+  margin-top: 75px;
+  max-width: 900px;
+}
+
+.schedule-event {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 50px;
+  background: #f7f0de;
+  border-radius: 20px;
+  padding: 20px 20px 30px;
+}
+
+.schedule-event img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--squiggle-color);
+  object-fit: cover;
+}
+
+.schedule-event:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.schedule-event .details {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 10px 0 0;
+}
+
+.schedule-event:nth-child(even) .details {
+  text-align: end;
+}
+
+.schedule-event .details h2 {
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+.schedule-event .details {
+  font-size: 21px;
+}
+
+.schedule-event .details .description {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  #schedule {
+    padding: 0;
+  }
+
+  .schedule-event,
+  .schedule-event:nth-child(even) {
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 6px;
+  }
+
+  .schedule-event img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--squiggle-color);
+  }
+
+  .schedule-event .details,
+  .schedule-event:nth-child(even) .details {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
+  .schedule-event {
+    gap: 30px;
+    padding: 12px 12px 20px;
+  }
+
+  .schedule-event img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1150px) {
+  .schedule-event img {
+    width: 140px;
+    height: 140px;
+  }
+}

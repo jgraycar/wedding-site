@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 10px 0 0;
+  padding: 0;
 }
 
 .schedule-event:nth-child(even) .details {
@@ -57,7 +57,7 @@
 
   .schedule-event,
   .schedule-event:nth-child(even) {
-    gap: 5px;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
     padding: 25px 6px;
